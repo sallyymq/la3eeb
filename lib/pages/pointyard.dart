@@ -30,7 +30,14 @@ class PointYard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Points Yard'),
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Color(0xFF0E2C44),
+        title: Text(
+          'Points Yard',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Container(
         color: Color(0xFF0E2C44),

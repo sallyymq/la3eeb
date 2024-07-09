@@ -11,8 +11,16 @@ class _elmal3abPageState extends State<elmal3abPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Elmal3ab'),
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Color(0xFF0E2C44),
+        title: const Text(
+          'Elmal3ab',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView(
         padding: const EdgeInsets.all(8.0),
@@ -27,6 +35,7 @@ class _elmal3abPageState extends State<elmal3abPage> {
               ExpansionPanel(
                 headerBuilder: (BuildContext context, bool isExpanded) {
                   return const ListTile(
+                    tileColor: Colors.white,
                     title: Text(
                       'شروط المشاركة',
                       textAlign: TextAlign.right,

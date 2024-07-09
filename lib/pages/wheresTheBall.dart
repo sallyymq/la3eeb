@@ -52,8 +52,16 @@ class _WherestheballState extends State<Wherestheball> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Where's The Ball"),
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
+        backgroundColor: Color(0xFF0E2C44),
+        title: const Text(
+          "Where's The Ball",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Stepper(
         elevation: 0, // Horizontal Impact
