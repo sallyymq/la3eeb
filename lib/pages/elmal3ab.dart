@@ -33,9 +33,10 @@ class _elmal3abPageState extends State<elmal3abPage> {
             },
             children: [
               ExpansionPanel(
+                backgroundColor: Colors.white,
+                canTapOnHeader: true,
                 headerBuilder: (BuildContext context, bool isExpanded) {
                   return const ListTile(
-                    tileColor: Colors.white,
                     title: Text(
                       'شروط المشاركة',
                       textAlign: TextAlign.right,
@@ -43,6 +44,7 @@ class _elmal3abPageState extends State<elmal3abPage> {
                   );
                 },
                 body: const ListTile(
+                  tileColor: Colors.white,
                   title: const Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [

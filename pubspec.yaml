@@ -7,6 +7,7 @@ environment:
   sdk: '>=3.4.0 <4.0.0'
 
 dependencies:
+  arabic_font: ^0.0.9
   easy_stepper: ^0.8.5
   flutter:
     sdk: flutter
