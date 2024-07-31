@@ -12,7 +12,7 @@ class _WherestheballState extends State<Wherestheball> {
   continueStep() {
     if (currentStep < 3) {
       setState(() {
-        currentStep = currentStep + 1; //currentStep+=1;
+        currentStep = currentStep + 1; 
       });
     }
   }
@@ -20,7 +20,7 @@ class _WherestheballState extends State<Wherestheball> {
   cancelStep() {
     if (currentStep > 0) {
       setState(() {
-        currentStep = currentStep - 1; //currentStep-=1;
+        currentStep = currentStep - 1; 
       });
     }
   }
@@ -59,6 +59,7 @@ class _WherestheballState extends State<Wherestheball> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.white,
       appBar: AppBar(
         iconTheme: IconThemeData(
@@ -70,9 +71,12 @@ class _WherestheballState extends State<Wherestheball> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Stepper(
+      body: 
+  
+      Stepper(
+
         connectorColor: WidgetStatePropertyAll(Color(0xFF0E2C44)),
-        elevation: 0, // Horizontal Impact
+        elevation: 0, 
         controlsBuilder: controlBuilders,
         type: StepperType.vertical,
         physics: const ScrollPhysics(),
